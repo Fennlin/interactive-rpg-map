@@ -1,0 +1,13 @@
+{
+  "name": "Crystal Woods",
+  "type": "Settlement",
+  "iconType": "default",
+  "coords": [909, 2154],
+  "description": "An isolated place due to the corruption. All kinds of creatures grew in an abnormal way around here, so a simple snake or fly could have the size of a dog.",
+  "history": "After the calamity, this place suffered a lot from the corruption, so its few settlers united a band of heroes to search and collect a Protector's Crystal to stop creatures from attacking or passing through the area.",
+  "points_of_interest": [
+    "<b>The Heroes' Monument:</b> A statue representing the moment the group, hurt and almost defeated, returned to the village with the Crystal.",
+    "<b>The Corrupted Forest:</b> A dense area where the corruption is stronger, and where the most dangerous creatures can be found.",
+    "<b>The Crystal Caverns:</b> A series of caves where the Protector's Crystal was found, now sealed to prevent further corruption from spreading."
+  ]
+}

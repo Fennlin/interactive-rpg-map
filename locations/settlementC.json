@@ -1,0 +1,13 @@
+{
+  "name": "Povoado C",
+  "type": "Settlement",
+  "iconType": "default",
+  "coords": [1510, 1821],
+  "description": "A quiet roadside settlement known for its rest houses and small trading stalls.",
+  "history": "The village began as a safe stop for travelers crossing the region and slowly grew around the main path.",
+  "points_of_interest": [
+    "Old Rest House",
+    "Central Well",
+    "Traveler's Stall"
+  ]
+}

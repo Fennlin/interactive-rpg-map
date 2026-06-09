@@ -1,0 +1,19 @@
+===> LEFT MENU
+- more lore
+- ideas for GMs out there who want to use this for their own games
+- option to change languages
+    - initial english
+    - then portuguese (br)
+    - spanish?
+    - italian?
+
+===> RIGHT MENU
+- 
+
+===> MAP
+- settlements A, C, D and E
+- other points of interest (create new pin colors)
+    - mountain ranges
+    - rivers
+    - "mapped cave entrances"
+    - oceans and bays

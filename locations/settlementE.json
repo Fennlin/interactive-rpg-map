@@ -1,0 +1,13 @@
+{
+  "name": "Povoado E",
+  "type": "Settlement",
+  "iconType": "default",
+  "coords": [1228, 2431],
+  "description": "A modest riverside settlement with wooden docks and frequent river traffic.",
+  "history": "It formed near the river crossing so boats and wagons could exchange goods in one place.",
+  "points_of_interest": [
+    "River Dock",
+    "Fisher's Hut",
+    "Crossing Bridge"
+  ]
+}

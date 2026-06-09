@@ -1,0 +1,13 @@
+{
+  "name": "Lakeside Hamlet",
+  "type": "Settlement",
+  "iconType": "default",
+  "coords": [666, 1526],
+  "description": "Nestled between the lake, the condillera and the ocean, this small settlement thrives on fishing and trade. The community often guards the road that leads east to west and west to east.",
+  "history": "After the calamity, survivors settled here, having the water and the food resources provided by the lake. All while being relatively safe from the monsters that roam the land.",
+  "points_of_interest": [
+    "<b>Lake Shore:</b> People often hear the haunting sounds of creatures in the water at night. Some say it's the spirits of those who drowned during the calamity. Others claim it's the call of a rare aquatic monster that has made the lake its home.",
+    "<b>Fishing Pier:</b> Though teeming with possible dangers, the pier remains a used place for fishing and gathering food for the locals.",
+    "<b>The Other Side Gate:</b> One of the two passages that lead from East to West and vice versa. Travelers often stop here to rest and share stories of their journeys, making it a hub of information and camaraderie in the region, since the other passage is more than a week away to the north of the cordillera."
+  ]
+}

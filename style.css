@@ -1,0 +1,155 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1a1a1a;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    overflow: hidden;
+}
+
+/* Map Container */
+#map {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: #111; /* Dark background color to show the container exists */
+}
+
+.leaflet-control-zoom {
+    display: none;
+}
+
+/* Sidebar Styling */
+#sidebar {
+    position: fixed;
+    top: 0;
+    right: -30%;
+    width: 30%;
+    height: 100%;
+    background: #2c251e;
+    color: #f4eccf;
+    border-left: 3px solid #8b7355;
+    box-sizing: border-box;
+    padding: 20px;
+    overflow-y: auto;
+    z-index: 2500; /* Ensures it sits on top of Leaflet layers */
+    transition: right 0.3s ease;
+}
+
+#sidebar.open {
+    right: 0;
+}
+
+#sidebar h2 {
+    color: #daa520;
+    border-bottom: 2px solid #8b7355;
+    padding-bottom: 8px;
+    margin-top: 0;
+}
+
+.sidebar-type {
+    font-style: italic;
+    color: #bfa37a;
+    margin-bottom: 15px;
+}
+
+#close-btn {
+    float: right;
+    background: none;
+    border: 1px solid #8b7355;
+    color: #f4eccf;
+    cursor: pointer;
+    padding: 2px 8px;
+}
+#close-btn:hover {
+    background: #8b7355;
+}
+
+/* Hamburger button */
+#menu-toggle {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 2000; /* Ensures it stays above the map */
+    background: #2c251e;
+    color: #daa520;
+    border: 2px solid #8b7355;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+#menu-toggle:hover {
+    background: #413529;
+}
+
+/* Left Sidebar */
+#left-sidebar {
+    position: fixed;
+    top: 0;
+    left: -30%; /* Starts hidden off-screen */
+    width: 30%;
+    height: 100%;
+    background: #2c251e;
+    color: #f4eccf;
+    border-right: 3px solid #8b7355;
+    box-sizing: border-box;
+    padding: 20px;
+    z-index: 2500; /* Above almost everything */
+    transition: left 0.3s ease; /* Smooth sliding effect */
+    overflow-y: auto;
+}
+
+/* Active class to open the sidebar */
+#left-sidebar.open {
+    left: 0;
+}
+
+#close-left-btn {
+    float: right;
+    background: none;
+    border: 1px solid #8b7355;
+    color: #f4eccf;
+    cursor: pointer;
+    padding: 2px 8px;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.filter-group label {
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.filter-group input[type="checkbox"] {
+    accent-color: #daa520;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.name-label {
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+    color: #f4eccf;
+    font-size: 20px;
+    font-weight: 700;
+    pointer-events: none;
+    text-align: center;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
+}
+
+.name-label::before {
+    display: none;
+}

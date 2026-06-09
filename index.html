@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive RPG World Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <div id="map"></div>
+
+    <div id="sidebar">
+        <button id="close-btn" onclick="closeSidebar()">X</button>
+        <h2 id="sidebar-title">Location Name</h2>
+        <div id="sidebar-type" class="sidebar-type">Location Type</div>
+        <div id="sidebar-content">Lore loading...</div>
+    </div>
+
+    <button id="menu-toggle" onclick="toggleLeftSidebar()">☰</button>
+
+    <div id="left-sidebar">
+        <button id="close-left-btn" onclick="toggleLeftSidebar()">X</button>
+        <h2>Filters</h2>
+        <hr style="border-color: #8b7355;">
+        
+        <div class="filter-group">
+            <label><input type="checkbox" id="chk-city" checked onchange="toggleLayer('city')"> 🏙️ Cities and Towns</label>
+            <label><input type="checkbox" id="chk-plains" checked onchange="toggleLayer('plains')"> 🌾 Plains</label>
+            <label><input type="checkbox" id="chk-forest" checked onchange="toggleLayer('forest')"> 🌲 Forests</label>
+            <label><input type="checkbox" id="chk-sea" checked onchange="toggleLayer('sea')"> 🌊 Seas and Oceans</label>
+            <label><input type="checkbox" id="chk-outpost" checked onchange="toggleLayer('outpost')"> 🛡️ Outposts</label>
+            <label><input type="checkbox" id="chk-mountain" checked onchange="toggleLayer('mountain')"> 🏔️ Mountains</label>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    
+    <script src="map.js"></script>
+</body>
+</html>

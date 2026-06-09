@@ -1,0 +1,13 @@
+{
+  "name": "Povoado A",
+  "type": "Settlement",
+  "iconType": "default",
+  "coords": [1229, 1158],
+  "description": ".",
+  "history": ".",
+  "points_of_interest": [
+    "Ponto A",
+    "Ponto B",
+    "Ponto C"
+  ]
+}
