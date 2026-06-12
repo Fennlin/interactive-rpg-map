@@ -1,0 +1,14 @@
+{
+  "name": "Ilha Distante",
+  "type": "Assentamento",
+  "iconType": "small_city",
+  "coords": [841, 2945],
+  "description": "Um pequeno assentamento localizado em uma ilha remota, cercado pelo vasto oceano. A comunidade é conhecida por seu isolamento e autossuficiência, dependendo da pesca e de uma agricultura limitada para sobreviver.",
+  "history": "Quando o mundo foi inundado, as pessoas ficaram isoladas nesta ilha. Muitas vezes é possível ver o brilho do Cristal do Protetor vindo do continente, quando o tempo está claro o suficiente.",
+  "points_of_interest": [
+    "<b>Ruínas do Mundo Antigo:</b> Ao sul do assentamento, descendo até o fim do desfiladeiro, é possível ver os remanescentes da antiga cidade. Embora, em geral, as águas não estejam tão calmas e claras.",
+    "<b>Casas Talhadas na Rocha:</b> Os moradores esculpiram suas casas nas falésias da montanha ao norte, criando um espaço de vida único e pitoresco que se mistura perfeitamente à paisagem natural.",
+    "<b>Oficina dos Carpinteiros Navais:</b> Uma oficina recém-criada onde pessoas habilidosas começaram a trabalhar em uma forma de construir barcos capazes de resistir às águas traiçoeiras ao redor da ilha, permitindo que finalmente se aventurassem além dela com segurança."
+  ],
+  "credits": ""
+}

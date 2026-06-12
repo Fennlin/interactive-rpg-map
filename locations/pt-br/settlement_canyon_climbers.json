@@ -1,0 +1,14 @@
+{
+  "name": "Escaladores do Cânion",
+  "type": "Assentamento",
+  "iconType": "small_city",
+  "coords": [732, 1844],
+  "description": "Construído entre o grande cânion e o oceano, este assentamento abriga uma comunidade de escaladores habilidosos. Eles são conhecidos por suas expedições ousadas para reunir recursos raros encontrados nas muitas cavernas e falésias do cânion, sob o gigantesco lago acima.",
+  "history": "Geralmente considerado um lugar frio para viver, já que muitas pessoas vieram até aqui e morreram tentando escalar. Quem vive aqui, cansado de tantos sonhos despedaçados, passou a receber viajantes sonhadores com uma acolhida mais dura, o que tornou o assentamento mais isolado e menos popular.",
+  "points_of_interest": [
+    "<b>As Escadas:</b> Uma longa escadaria sinuosa esculpida nas paredes do cânion, levando à plataforma onde todos os escaladores começam sua subida.",
+    "<b>Mirante da Baía Esmeralda:</b> Um mirante de tirar o fôlego, com vista para o oceano, onde os escaladores costumam se reunir para contar histórias e admirar a paisagem.",
+    "<b>A Forja:</b> Uma oficina onde ferreiros habilidosos criam equipamentos e ferramentas de escalada, usando materiais coletados nos cânions."
+  ],
+  "credits": ""
+}

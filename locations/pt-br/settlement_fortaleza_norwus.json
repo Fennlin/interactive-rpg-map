@@ -1,0 +1,15 @@
+{
+  "name": "Fortaleza Norwus",
+  "type": "Assentamento",
+  "iconType": "small_city",
+  "coords": [389, 1586],
+  "description": "O que antes era a tranquila cidade pesqueira de Norwus agora é o ponto mais fortificado de todo o continente. Construído sobre os penhascos com vista para o Canal de Sori'as, o forte se ergue com balistas e torres de vigia apontadas para a silhueta escura da Ilha de Sori'as no horizonte. Abaixo das fortificações, a cidade antiga ainda resiste; suas ruas estreitas de casas de pescadores agora dividem espaço com quartéis, forjas e armazéns para a frota do Doge. Soldados e marinheiros superam em número os habitantes originais, mas o cheiro de peixe salgado e piche ainda paira pelo bairro inferior, um lembrete do que Norwus já foi.",
+  "history": "Norwus foi um pequeno assentamento de pescadores por décadas após a calamidade, suficientemente protegido pela península para evitar a maior parte do caos que consumiu o continente. Isso mudou no ano 34 após a calamidade, quando saqueadores da Ilha de Sori'as conseguiram construir balsas que os trouxeram até o continente e atacaram a costa pela primeira vez, incendiando metade do porto e arrastando dezenas de vilarejos de volta pelo canal. O Doge, reconhecendo tanto a ameaça quanto a oportunidade, ordenou a transformação da península: o estreito natural do canal a tornava o lugar perfeito para construir uma fortaleza e um porto de águas profundas capaz de abrigar as únicas águas seguras do continente. Em uma geração, Norwus deixou de ser uma vila pesqueira esquecida para se tornar a linha de frente contra o que quer que ainda viva em Sori'as e nos oceanos ao redor.",
+  "points_of_interest": [
+    "<b>O Cais do Doge:</b> A maior doca seca do continente, onde navios estão sendo construídos, reparados e testados. Civis precisam de permissão até para caminhar por sua extensão.",
+    "<b>A Vigia de Sori'as:</b> Uma fileira de torres à beira do penhasco, guarnecidas dia e noite, com fogueiras de sinal prontas para avisar as províncias internas no momento em que balsas forem avistadas no canal.",
+    "<b>O Bairro Submerso:</b> Os restos semicarbonizados do antigo Norwus, nunca totalmente reconstruídos — alguns dizem por respeito aos levados no primeiro ataque, outros dizem que ninguém quer viver tão perto da água novamente.",
+    "<b>O Longo Canhão:</b> Uma imensa peça de artilharia antiga montada no ponto mais ao sul do forte, dita anterior à própria calamidade. Ninguém atualmente em serviço sabe como dispará-la."
+  ],
+  "credits": "Obrigado Vitor por me ajudar a criar a Fortaleza Norwus! <3"
+}

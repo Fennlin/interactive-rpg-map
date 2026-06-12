@@ -1,0 +1,14 @@
+{
+  "name": "Assentamento A",
+  "type": "Assentamento",
+  "iconType": "small_city",
+  "coords": [1229, 1158],
+  "description": "placeholder!",
+  "history": "placeholder!",
+  "points_of_interest": [
+    "Ponto A",
+    "Ponto B",
+    "Ponto C"
+  ],
+  "credits": ""
+}

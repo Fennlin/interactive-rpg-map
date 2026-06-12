@@ -1,7 +1,7 @@
 {
   "name": "The Ridge",
   "type": "Settlement",
-  "iconType": "default",
+  "iconType": "small_city",
   "coords": [739, 1153],
   "description": "After the calamity of 87 years ago, this ridge became a refuge for those seeking safety from the monsters that roam the land. The settlement is built into the rocky terrain. The residents have adapted to their environment, using the natural defenses of the ridge to protect themselves from threats. Despite its isolation, The Ridge is open to travalers and adventurers, offering a unique blend of rugged beauty and a sense of community among those who call it home.",
   "history": "The Ridge was established shortly after the calamity as a sanctuary for survivors. The natural fortifications of the place made it an ideal location for those looking to escape the dangers of the world below. Over time, it grew into a small but resilient community, with residents who are skilled in navigating the treacherous terrain and defending against monster attacks. The settlement has become a symbol of hope and resilience in a world that has been forever changed by the calamity.",
@@ -10,5 +10,6 @@
     "<b>Ocean Viewpoint:</b> A scenic overlook where travelers can rest and enjoy the sight of the ocean, though it's often shrouded in mist.",
     "<b>Abandoned Watchtower:</b> A crumbling structure that once served as a lookout for approaching threats, now a popular spot for adventurers seeking shelter or a vantage point.",
     "<b>Hidden Cave Entrance:</b> A concealed opening in the rock face that leads to a network of caves, rumored to be home to various creatures and treasures."
-  ]
+  ],
+  "credits": ""
 }

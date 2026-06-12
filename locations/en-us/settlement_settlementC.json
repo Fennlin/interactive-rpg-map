@@ -1,0 +1,14 @@
+{
+  "name": "Settlement C",
+  "type": "Settlement",
+  "iconType": "small_city",
+  "coords": [1510, 1821],
+  "description": "placeholder!",
+  "history": "placeholder!",
+  "points_of_interest": [
+    "Point A",
+    "Point B",
+    "Point C"
+  ],
+  "credits": ""
+}

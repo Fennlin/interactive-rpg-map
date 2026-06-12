@@ -1,7 +1,7 @@
 {
   "name": "Canyon Climbers",
   "type": "Settlement",
-  "iconType": "default",
+  "iconType": "small_city",
   "coords": [732, 1844],
   "description": "Built between the great canyon and the ocean, this settlement is home to a community of skilled climbers. They are known for their daring expeditions to gather rare resourcers often found inside the many caves and cliffs of the canyon, under the giant lake above.",
   "history": "Usually considered a cold place to live, since many people came here and died trying to climb. Those who live here, tired of all the shattered dreams, started treating dreamful travelers with a harsher welcome, which made the settlement more isolated and less popular.",
@@ -9,5 +9,6 @@
     "<b>The Stairs:</b> A long and winding staircase carved into the walls of the canyon, leading to the plataform where all climbers begin their ascent.",
     "<b>The Emerald Bay Viewpoint:</b> A breathtaking viewpoint overlooking the ocean, where climbers often gather to share stories and admire the scenery.",
     "<b>The Forge:</b> A workshop where skilled blacksmiths craft climbing gear and tools, using materials gathered from the canyons."
-  ]
+  ],
+  "credits": ""
 }

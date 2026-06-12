@@ -1,0 +1,18 @@
+{
+  "lore": "_LORE.json",
+  "files": [
+    "lake_A.json",
+    "lake_B.json",
+    "settlement_settlementA.json",
+    "settlement_northern_haven.json",
+    "settlement_settlementC.json",
+    "settlement_galina.json",
+    "settlement_klandor_and_burrow.json",
+    "settlement_crystal_woods.json",
+    "settlement_canyon_climbers.json",
+    "settlement_the_ridge.json",
+    "settlement_lakeside_hamlet.json",
+    "settlement_fort_norwus.json",
+    "settlement_faraway_isle.json"
+  ]
+}

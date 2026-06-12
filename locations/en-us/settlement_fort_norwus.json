@@ -1,0 +1,15 @@
+{
+  "name": "Fort Norwus",
+  "type": "Settlement",
+  "iconType": "small_city",
+  "coords": [389, 1586],
+  "description": "What was once the quiet fishing town of Norwus is now the most heavily fortified point on the continent. Built into the cliffs overlooking the Channel of Sori'as, the fort bristles with ballistae and watch-towers angled toward the dark silhouette of the Isle of Sori'as on the horizon. Below the fortifications, the old town still survives,  narrow streets of fishermen's houses now share space with barracks, forges, and warehouses for the Doge's fleet. Soldiers and sailors far outnumber the original townsfolk, but the smell of salt fish and tar still drifts through the lower quarter, a reminder of what Norwus used to be.",
+  "history": "Norwus was a minor fishing settlement for decades after the calamity, sheltered enough by the peninsula to avoid most of the chaos that consumed the mainland. That changed in the year 34 after the calamity, when raiders from the Isle of Sori'as managed to create rafts that brought them to the mainland and struck the coast for the first time, burning half the harbor and dragging dozens of villagers back across the channel. The Doge, recognizing both the threat and the opportunity, ordered the peninsula transformed: the natural chokepoint of the channel made it the perfect place to build a fortress and a deep-water port capable of housing the continent's only safe waters. Within a generation, Norwus went from a forgotten fishing village to the front line against whatever still lives on Sori'as and the oceans around.",
+  "points_of_interest": [
+    "<b>The Doge's Wharf:</b> The largest dry dock on the continent, where ships are actively being built, repaired, and tested. Civilians need a permit to even walk its length.",
+    "<b>The Sori'as Watch:</b> A row of cliffside towers manned day and night, their signal fires ready to warn the inner provinces the moment rafts are spotted on the channel.",
+    "<b>The Sunken Quarter:</b> The half-burned remains of old Norwus, never fully rebuilt — some say out of respect for those taken in the first raid, others say because no one wants to live so close to the water anymore.",
+    "<b>The Long Cannon:</b> A massive, ancient piece of siege weaponry mounted on the southernmost point of the fort, said to predate the calamity itself. No one currently serving knows how to fire it."
+  ],
+  "credits": "Thank you Vitor for helping me create Fort Norwus! <3"
+}

@@ -5,7 +5,11 @@ This project is a personal portfolio piece that brings together my hobby and pas
 
 It is a custom interactive map where locations can be explored through pins, filters, and lore panels. The goal is to present worldbuilding content in a simple and immersive way.
 
+## Website
+https://interactive-rpg-map-vercel.vercel.app/
+
 ## Technologies Used
+- Visual Studio Code
 - HTML
 - CSS
 - JavaScript

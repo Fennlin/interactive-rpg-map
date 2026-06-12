@@ -1,0 +1,14 @@
+{
+  "name": "Lake B",
+  "type": "Lake",
+  "iconType": "water",
+  "coords": [753, 1599],
+  "description": "placeholder!",
+  "history": "placeholder!",
+  "points_of_interest": [
+    "Point A",
+    "Point B",
+    "Point C"
+  ],
+  "credits": ""
+}

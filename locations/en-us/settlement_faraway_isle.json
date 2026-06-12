@@ -1,7 +1,7 @@
 {
   "name": "Faraway Isle",
   "type": "Settlement",
-  "iconType": "default",
+  "iconType": "small_city",
   "coords": [841, 2945],
   "description": "A small settlement located on a remote island, surrounded by the vast ocean. The community is known for its isolation and self-sufficiency, relying on fishing and limited agriculture to sustain itself.",
   "history": "When the world flooded, the people got isolated on this island. It is often possible to see the the glow of the Protector's Crystal from the mainland, when the weather is clear enough.",
@@ -9,5 +9,6 @@
     "<b>Old World Ruins:</b> South of the settlement, all the way down from the drop, it is possible to see the remnants of the old city. Though usually the waters aren't so calm and clear.",
     "<b>Carved Homes:</b> The residents have carved their homes into the rocky cliffs of the northern mountain, creating a unique and picturesque living space that blends seamlessly with the natural landscape.",
     "<b>The Shipwright's Workshop:</b> A newly created workshop where skilled people started working on a way to build boats that can withstand the treacherous waters surrounding the island, allowing them to finally venture beyond the island safely."
-  ]
+  ],
+  "credits": ""
 }

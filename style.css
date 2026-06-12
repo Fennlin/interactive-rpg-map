@@ -1,120 +1,288 @@
+:root {
+    --page-bg: #1a1a1a;
+    --map-bg: #111;
+    --panel-bg: #2c251e;
+    --panel-bg-hover: #413529;
+    --panel-border: #8b7355;
+    --panel-text: #f4eccf;
+    --accent: #daa520;
+    --muted: #bfa37a;
+    --overlay-bg: rgba(10, 8, 6, 0.7);
+    --side-panel-width: 30%;
+}
+
 html, body {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
-    background-color: #1a1a1a;
+    background-color: var(--page-bg);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     overflow: hidden;
 }
 
-/* Map Container */
+.app-shell {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    flex: 1 1 auto;
+}
+
+/* Map area. */
 #map {
     width: 100%;
     height: 100%;
     position: relative;
-    background: #111; /* Dark background color to show the container exists */
+    background: var(--map-bg);
 }
 
 .leaflet-control-zoom {
     display: none;
 }
 
-/* Sidebar Styling */
-#sidebar {
+/* Shared left and right panel layout. */
+.side-panel {
     position: fixed;
     top: 0;
-    right: -30%;
-    width: 30%;
+    width: var(--side-panel-width);
     height: 100%;
-    background: #2c251e;
-    color: #f4eccf;
-    border-left: 3px solid #8b7355;
+    background: var(--panel-bg);
+    color: var(--panel-text);
     box-sizing: border-box;
     padding: 20px;
     overflow-y: auto;
-    z-index: 2500; /* Ensures it sits on top of Leaflet layers */
+    z-index: 2500;
+}
+
+/* Right panel. */
+#right-sidebar {
+    right: calc(var(--side-panel-width) * -1);
+    border-left: 3px solid var(--panel-border);
     transition: right 0.3s ease;
 }
 
-#sidebar.open {
+#right-sidebar.open {
     right: 0;
 }
 
-#sidebar h2 {
-    color: #daa520;
-    border-bottom: 2px solid #8b7355;
+#right-sidebar h2 {
+    color: var(--accent);
+    border-bottom: 2px solid var(--panel-border);
     padding-bottom: 8px;
     margin-top: 0;
 }
 
 .sidebar-type {
     font-style: italic;
-    color: #bfa37a;
+    color: var(--muted);
     margin-bottom: 15px;
 }
 
-#close-btn {
+/* Shared close button style. */
+#close-btn,
+#close-left-btn {
     float: right;
     background: none;
-    border: 1px solid #8b7355;
-    color: #f4eccf;
+    border: 1px solid var(--panel-border);
+    color: var(--panel-text);
     cursor: pointer;
     padding: 2px 8px;
 }
-#close-btn:hover {
-    background: #8b7355;
+
+#close-btn:hover,
+#close-left-btn:hover {
+    background: var(--panel-border);
 }
 
-/* Hamburger button */
+/* Menu toggle button. */
 #menu-toggle {
     position: absolute;
     top: 20px;
     left: 20px;
-    z-index: 2000; /* Ensures it stays above the map */
-    background: #2c251e;
-    color: #daa520;
-    border: 2px solid #8b7355;
+    z-index: 2000;
+    background: var(--panel-bg);
+    color: var(--accent);
+    border: 2px solid var(--panel-border);
     padding: 10px 15px;
     font-size: 20px;
     cursor: pointer;
     border-radius: 4px;
     transition: background 0.2s;
 }
+
 #menu-toggle:hover {
-    background: #413529;
+    background: var(--panel-bg-hover);
 }
 
-/* Left Sidebar */
-#left-sidebar {
+/* Lore popup trigger. */
+#lore-toggle {
     position: fixed;
-    top: 0;
-    left: -30%; /* Starts hidden off-screen */
-    width: 30%;
-    height: 100%;
-    background: #2c251e;
-    color: #f4eccf;
-    border-right: 3px solid #8b7355;
-    box-sizing: border-box;
-    padding: 20px;
-    z-index: 2500; /* Above almost everything */
-    transition: left 0.3s ease; /* Smooth sliding effect */
-    overflow-y: auto;
+    left: 50%;
+    bottom: 22px;
+    transform: translateX(-50%);
+    z-index: 2400;
+    background: linear-gradient(180deg, #3a2d22 0%, #241d17 100%);
+    color: var(--panel-text);
+    border: 2px solid var(--panel-border);
+    border-radius: 4px;
+    padding: 10px 16px;
+    min-width: 88px;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+    transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
 }
 
-/* Active class to open the sidebar */
+#lore-toggle:hover {
+    background: linear-gradient(180deg, #4b3a2d 0%, #30261d 100%);
+    border-color: var(--accent);
+    transform: translateX(-50%) translateY(-2px);
+}
+
+/* Lore popup. */
+.lore-modal {
+    position: fixed;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 2600;
+}
+
+.lore-modal.open {
+    display: flex;
+}
+
+.lore-modal__backdrop {
+    position: absolute;
+    inset: 0;
+    background: var(--overlay-bg);
+    backdrop-filter: blur(3px);
+}
+
+.lore-modal__dialog {
+    position: relative;
+    width: min(640px, calc(100vw - 40px));
+    height: clamp(300px, 33vh, 440px);
+    max-height: calc(100vh - 60px);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(180deg, #342a21 0%, #221b15 100%);
+    color: var(--panel-text);
+    border: 2px solid var(--panel-border);
+    border-radius: 18px;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5);
+    padding: 22px;
+}
+
+.lore-modal__header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 18px;
+    margin-bottom: 18px;
+}
+
+.lore-modal__eyebrow {
+    margin: 0 0 6px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-size: 12px;
+}
+
+.lore-modal__dialog h2 {
+    margin: 0;
+    color: var(--accent);
+    font-size: 28px;
+}
+
+#lore-close {
+    flex: 0 0 auto;
+    background: none;
+    border: 1px solid var(--panel-border);
+    color: var(--panel-text);
+    cursor: pointer;
+    padding: 4px 10px;
+    border-radius: 6px;
+}
+
+#lore-close:hover {
+    background: var(--panel-bg-hover);
+}
+
+.lore-modal__content {
+    flex: 1 1 auto;
+    display: grid;
+    gap: 16px;
+    overflow-y: auto;
+    padding-right: 6px;
+}
+
+.lore-modal__content article {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(139, 115, 85, 0.35);
+    border-radius: 14px;
+    padding: 16px 18px;
+}
+
+.lore-modal__content h3 {
+    margin: 0 0 8px;
+    color: var(--accent);
+    font-size: 18px;
+}
+
+.lore-modal__content p {
+    margin: 0;
+    color: var(--panel-text);
+    line-height: 1.6;
+}
+
+body.lore-open {
+    overflow: hidden;
+}
+
+/* Left panel. */
+#left-sidebar {
+    left: calc(var(--side-panel-width) * -1);
+    border-right: 3px solid var(--panel-border);
+    transition: left 0.3s ease;
+}
+
 #left-sidebar.open {
     left: 0;
 }
 
-#close-left-btn {
-    float: right;
-    background: none;
-    border: 1px solid #8b7355;
-    color: #f4eccf;
+.language-switcher {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-bottom: 16px;
+}
+
+.language-button {
+    background: #1f1914;
+    color: var(--panel-text);
+    border: 1px solid var(--panel-border);
+    border-radius: 4px;
+    padding: 6px 10px;
     cursor: pointer;
-    padding: 2px 8px;
+    font-weight: 700;
+    transition: background 0.2s, border-color 0.2s, transform 0.2s;
+}
+
+.language-button:hover {
+    background: var(--panel-bg-hover);
+}
+
+.language-button.active {
+    background: var(--panel-border);
+    border-color: var(--accent);
+    transform: translateY(-1px);
 }
 
 .filter-group {
@@ -133,16 +301,17 @@ html, body {
 }
 
 .filter-group input[type="checkbox"] {
-    accent-color: #daa520;
+    accent-color: var(--accent);
     transform: scale(1.2);
     cursor: pointer;
 }
 
+/* Tooltip label for location names. */
 .name-label {
     background: transparent;
     border: 0;
     box-shadow: none;
-    color: #f4eccf;
+    color: var(--panel-text);
     font-size: 20px;
     font-weight: 700;
     pointer-events: none;

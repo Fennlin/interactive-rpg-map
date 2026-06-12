@@ -1,0 +1,14 @@
+{
+  "name": "Klandor & A Toca",
+  "type": "Assentamento",
+  "iconType": "small_city",
+  "coords": [1228, 2431],
+  "description": "placeholder!",
+  "history": "placeholder!",
+  "points_of_interest": [
+    "Ponto A",
+    "Ponto B",
+    "Ponto C"
+  ],
+  "credits": "Obrigado Czar por me ajudar a criar Klandor & A Toca! <3"
+}

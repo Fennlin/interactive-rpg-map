@@ -1,0 +1,15 @@
+{
+  "name": "A Crista",
+  "type": "Assentamento",
+  "iconType": "small_city",
+  "coords": [739, 1153],
+  "description": "Após a calamidade de 87 anos atrás, esta crista se tornou um refúgio para quem buscava segurança contra os monstros que vagam pela terra. O assentamento foi construído no terreno rochoso. Os moradores se adaptaram ao ambiente, usando as defesas naturais da crista para se proteger das ameaças. Apesar do isolamento, A Crista está aberta para viajantes e aventureiros, oferecendo uma mistura única de beleza rústica e senso de comunidade entre os que a chamam de lar.",
+  "history": "A Crista foi estabelecida pouco depois da calamidade como um santuário para sobreviventes. As fortificações naturais do local o tornaram um ponto ideal para quem buscava escapar dos perigos do mundo abaixo. Com o tempo, tornou-se uma comunidade pequena, mas resiliente, com moradores habilidosos em navegar pelo terreno traiçoeiro e se defender de ataques de monstros. O assentamento se tornou um símbolo de esperança e resistência em um mundo que foi para sempre transformado pela calamidade.",
+  "points_of_interest": [
+    "<b>Estrada do Topo:</b> Um caminho sinuoso que leva ao ponto mais alto da crista, oferecendo vistas panorâmicas... Quando não há monstros por perto.",
+    "<b>Mirante do Oceano:</b> Um ponto de observação onde viajantes podem descansar e apreciar o mar, embora muitas vezes esteja envolto em neblina.",
+    "<b>Torre de Vigia Abandonada:</b> Uma estrutura em ruínas que um dia serviu como observatório para ameaças que se aproximavam, agora um local popular para aventureiros em busca de abrigo ou de um ponto elevado.",
+    "<b>Entrada da Caverna Oculta:</b> Uma abertura escondida na face da rocha que leva a uma rede de cavernas, onde dizem existir várias criaturas e tesouros."
+  ],
+  "credits": ""
+}

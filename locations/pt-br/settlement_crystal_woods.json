@@ -1,0 +1,14 @@
+{
+  "name": "Bosque de Cristal",
+  "type": "Assentamento",
+  "iconType": "small_city",
+  "coords": [909, 2154],
+  "description": "Um local isolado por causa da corrupção. Todo tipo de criatura cresceu de forma anormal por aqui, então uma simples cobra ou mosca podia ter o tamanho de um cachorro.",
+  "history": "Após a calamidade, este lugar sofreu muito com a corrupção, então os poucos moradores uniram um grupo de heróis para procurar e coletar um Cristal do Protetor, impedindo que criaturas atacassem ou atravessassem a região.",
+  "points_of_interest": [
+    "<b>Monumento dos Heróis:</b> Uma estátua que representa o momento em que o grupo, ferido e quase derrotado, voltou para a vila com o Cristal.",
+    "<b>A Floresta Corrompida:</b> Uma área densa onde a corrupção é mais forte e onde podem ser encontradas as criaturas mais perigosas.",
+    "<b>As Cavernas de Cristal:</b> Uma série de cavernas onde o Cristal do Protetor foi encontrado, agora seladas para impedir que a corrupção continue se espalhando."
+  ],
+  "credits": "Obrigado Lucas por me ajudar a criar o Bosque de Cristal! <3"
+}

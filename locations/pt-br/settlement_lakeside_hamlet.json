@@ -1,0 +1,14 @@
+{
+  "name": "A Aldeia do Lago",
+  "type": "Assentamento",
+  "iconType": "small_city",
+  "coords": [666, 1526],
+  "description": "Aninhada entre o lago, a cordilheira e o oceano, esta pequena aldeia prospera com a pesca e o comércio. A comunidade costuma guardar a estrada que segue de leste a oeste e de oeste a leste.",
+  "history": "Após a calamidade, os sobreviventes se estabeleceram aqui, aproveitando a água e os recursos alimentares fornecidos pelo lago. Tudo isso enquanto permaneciam relativamente seguros dos monstros que vagam pela terra.",
+  "points_of_interest": [
+    "<b>Margem do Lago:</b> As pessoas costumam ouvir à noite os sons assustadores de criaturas na água. Alguns dizem que são os espíritos de quem se afogou durante a calamidade. Outros afirmam que é o chamado de um raro monstro aquático que fez do lago seu lar.",
+    "<b>Píer de Pesca:</b> Embora cheio de perigos em potencial, o píer continua sendo um local usado para pescar e reunir alimentos para os moradores.",
+    "<b>O Portão do Outro Lado:</b> Uma das duas passagens que levam de Leste a Oeste e vice-versa. Viajantes costumam parar aqui para descansar e contar histórias de suas jornadas, tornando o local um ponto de informação e camaradagem na região, já que a outra passagem fica a mais de uma semana ao norte da cordilheira."
+  ],
+  "credits": ""
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Refúgio do Norte",
+  "type": "Assentamento",
+  "iconType": "small_city",
+  "coords": [1762, 1363],
+  "description": "Um refúgio no meio de uma floresta de pinheiros, conhecido por seus muros resistentes e arqueiros habilidosos. Embora distante do resto do mundo, mantém boas relações com os outros assentamentos e muitas vezes abre suas portas para viajantes e mercadores cansados.",
+  "history": "Os primeiros colonos descobriram este lugar enquanto buscavam abrigo da Tempestade Negra. De um pequeno acampamento, cresceu até se tornar um assentamento fortificado no meio das árvores altas, que ofereciam não só proteção contra monstros corrompidos, mas também pontos de observação para arqueiros e batedores.",
+  "points_of_interest": [
+    "<b>Provas dos Arqueiros:</b> Um campo de treinamento onde arqueiros em formação podem testar suas habilidades contra diversos alvos e desafios.",
+    "<b>As Pontes:</b> Uma série de pontes de madeira conectando diferentes partes do assentamento, oferecendo passagem segura entre os galhos, longe do solo.",
+    "<b>O Salão do Carpinteiro:</b> Uma oficina onde artesãos habilidosos criam arcos, flechas e outros itens de madeira usando os abundantes recursos da floresta ao redor."
+  ],
+  "credits": ""
+}

@@ -8,35 +8,69 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+    <main class="app-shell">
+        <!-- Map -->
+        <div id="map"></div>
 
-    <div id="map"></div>
+        <!-- Menu toggle -->
+        <button id="menu-toggle" onclick="toggleLeftSidebar()">☰</button>
 
-    <div id="sidebar">
-        <button id="close-btn" onclick="closeSidebar()">X</button>
-        <h2 id="sidebar-title">Location Name</h2>
-        <div id="sidebar-type" class="sidebar-type">Location Type</div>
-        <div id="sidebar-content">Lore loading...</div>
-    </div>
+        <!-- Right panel -->
+        <aside id="right-sidebar" class="side-panel side-panel--right" aria-label="Location details">
+            <header>
+                <button id="close-btn" onclick="closeRightSidebar()">X</button>
+                <h2 id="sidebar-title">Location Name</h2>
+                <div id="sidebar-type" class="sidebar-type">Location Type</div>
+            </header>
 
-    <button id="menu-toggle" onclick="toggleLeftSidebar()">☰</button>
+            <section id="sidebar-content" aria-live="polite">Lore loading...</section>
+        </aside>
 
-    <div id="left-sidebar">
-        <button id="close-left-btn" onclick="toggleLeftSidebar()">X</button>
-        <h2>Filters</h2>
-        <hr style="border-color: #8b7355;">
-        
-        <div class="filter-group">
-            <label><input type="checkbox" id="chk-city" checked onchange="toggleLayer('city')"> 🏙️ Cities and Towns</label>
-            <label><input type="checkbox" id="chk-plains" checked onchange="toggleLayer('plains')"> 🌾 Plains</label>
-            <label><input type="checkbox" id="chk-forest" checked onchange="toggleLayer('forest')"> 🌲 Forests</label>
-            <label><input type="checkbox" id="chk-sea" checked onchange="toggleLayer('sea')"> 🌊 Seas and Oceans</label>
-            <label><input type="checkbox" id="chk-outpost" checked onchange="toggleLayer('outpost')"> 🛡️ Outposts</label>
-            <label><input type="checkbox" id="chk-mountain" checked onchange="toggleLayer('mountain')"> 🏔️ Mountains</label>
+        <!-- Left panel -->
+        <aside id="left-sidebar" class="side-panel side-panel--left" aria-label="Filters and language">
+            <header>
+                <button id="close-left-btn" onclick="toggleLeftSidebar()">X</button>
+                <div id="language-switcher" class="language-switcher" aria-label="Language switcher">
+                    <button type="button" class="language-button" data-lang="en-us" onclick="setLanguage('en-us')">EN</button>
+                    <button type="button" class="language-button" data-lang="pt-br" onclick="setLanguage('pt-br')">PT</button>
+                </div>
+            </header>
+
+            <section aria-labelledby="filters-title">
+                <h2 id="filters-title">Filters</h2>
+                <hr style="border-color: #8b7355;">
+
+                <div class="filter-group">
+                    <label><input type="checkbox" id="chk-city" checked onchange="toggleLayer('city')"> <span data-i18n="filter-city">🏙️ Cities and Towns</span></label>
+                    <label><input type="checkbox" id="chk-plains" checked onchange="toggleLayer('plains')"> <span data-i18n="filter-plains">🌾 Plains</span></label>
+                    <label><input type="checkbox" id="chk-forest" checked onchange="toggleLayer('forest')"> <span data-i18n="filter-forest">🌲 Forests</span></label>
+                    <label><input type="checkbox" id="chk-sea" checked onchange="toggleLayer('sea')"> <span data-i18n="filter-sea">🌊 Seas and Oceans</span></label>
+                    <label><input type="checkbox" id="chk-outpost" checked onchange="toggleLayer('outpost')"> <span data-i18n="filter-outpost">🛡️ Outposts</span></label>
+                    <label><input type="checkbox" id="chk-mountain" checked onchange="toggleLayer('mountain')"> <span data-i18n="filter-mountain">🏔️ Mountains</span></label>
+                </div>
+            </section>
+        </aside>
+
+        <button id="lore-toggle" type="button" onclick="openLorePopup()">Lore</button>
+
+        <div id="lore-modal" class="lore-modal" aria-hidden="true">
+            <div class="lore-modal__backdrop" onclick="closeLorePopup()"></div>
+            <section class="lore-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="lore-modal-title">
+                <header class="lore-modal__header">
+                    <div>
+                        <p class="lore-modal__eyebrow" id="lore-modal-eyebrow">World Lore</p>
+                        <h2 id="lore-modal-title">The First Roads</h2>
+                    </div>
+                    <button id="lore-close" type="button" onclick="closeLorePopup()" aria-label="Close lore popup">X</button>
+                </header>
+
+                <div id="lore-modal-content" class="lore-modal__content" aria-live="polite"></div>
+            </section>
         </div>
-    </div>
+    </main>
 
+    <!-- Scripts -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    
     <script src="map.js"></script>
 </body>
 </html>

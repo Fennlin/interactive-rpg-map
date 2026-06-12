@@ -1,0 +1,14 @@
+{
+  "name": "Klandor & The Burrow",
+  "type": "Settlement",
+  "iconType": "small_city",
+  "coords": [1228, 2431],
+  "description": "placeholder!",
+  "history": "placeholder!",
+  "points_of_interest": [
+    "Point A",
+    "Point B",
+    "Point C"
+  ],
+  "credits": "Thank you Czar for helping me create Klandor & The Burrow! <3"
+}

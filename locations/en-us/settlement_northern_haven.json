@@ -1,7 +1,7 @@
 {
   "name": "Northern Haven",
   "type": "Settlement",
-  "iconType": "default",
+  "iconType": "small_city",
   "coords": [1762, 1363],
   "description": "A haven in the middle of a pine forest, known for its sturdy walls and skilled archers. Although far from the rest of the world, it has a good standing with all the other settlements, often opening its doors to weary travelers and merchants.",
   "history": "The first settlers discovered the location while seeking refuge from the Dark Storm. From a small camp, it grew into a fortified settlement in the middle of the tall trees, which offered not only protection from corrupted monsters, but also vantage points for archers and scouts.",
@@ -9,5 +9,6 @@
     "<b>Archers' Trials:</b> A training ground where aspiring archers can test their skills against various targets and challenges.",
     "<b>The Bridges:</b> A series of wooden bridges connecting different parts of the settlement, offering safe passage between the branches, away from the grounds.",
     "<b>The Woodworker's Hall:</b> A workshop where skilled artisans craft bows, arrows, and other wooden items, using the abundant resources from the surrounding forest."
-  ]
+  ],
+  "credits": ""
 }
