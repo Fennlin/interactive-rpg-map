@@ -95,33 +95,11 @@ html, body {
     background: var(--panel-border);
 }
 
-/* Menu toggle button. */
-#menu-toggle {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    z-index: 2000;
-    background: var(--panel-bg);
-    color: var(--accent);
-    border: 2px solid var(--panel-border);
-    padding: 10px 15px;
-    font-size: 20px;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: background 0.2s;
-}
-
-#menu-toggle:hover {
-    background: var(--panel-bg-hover);
-}
-
-/* Lore popup trigger. */
+/* Shared trigger button style. */
+#menu-toggle,
 #lore-toggle {
-    position: fixed;
-    left: 50%;
-    bottom: 22px;
-    transform: translateX(-50%);
-    z-index: 2400;
+    position: absolute;
+    z-index: 2000;
     background: linear-gradient(180deg, #3a2d22 0%, #241d17 100%);
     color: var(--panel-text);
     border: 2px solid var(--panel-border);
@@ -136,10 +114,39 @@ html, body {
     transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
 }
 
+#menu-toggle:hover,
 #lore-toggle:hover {
     background: linear-gradient(180deg, #4b3a2d 0%, #30261d 100%);
     border-color: var(--accent);
+}
+
+#menu-toggle:hover {
+    transform: translateY(-2px);
+}
+
+#lore-toggle:hover {
     transform: translateX(-50%) translateY(-2px);
+}
+
+/* Menu toggle button. */
+#menu-toggle {
+    top: 20px;
+    left: 20px;
+    color: var(--accent);
+    min-width: 0;
+    padding: 10px 15px;
+    font-size: 20px;
+    letter-spacing: 0;
+    transform: none;
+}
+
+/* Lore popup trigger. */
+#lore-toggle {
+    position: fixed;
+    left: 50%;
+    bottom: 22px;
+    transform: translateX(-50%);
+    z-index: 2400;
 }
 
 /* Lore popup. */
@@ -174,7 +181,7 @@ html, body {
     background: linear-gradient(180deg, #342a21 0%, #221b15 100%);
     color: var(--panel-text);
     border: 2px solid var(--panel-border);
-    border-radius: 18px;
+    border-radius: 4px;
     box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5);
     padding: 22px;
 }
@@ -203,16 +210,20 @@ html, body {
 
 #lore-close {
     flex: 0 0 auto;
-    background: none;
-    border: 1px solid var(--panel-border);
+    background: linear-gradient(180deg, #3a2d22 0%, #241d17 100%);
+    border: 2px solid var(--panel-border);
     color: var(--panel-text);
     cursor: pointer;
-    padding: 4px 10px;
-    border-radius: 6px;
+    padding: 6px 10px;
+    border-radius: 4px;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+    transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
 }
 
 #lore-close:hover {
-    background: var(--panel-bg-hover);
+    background: linear-gradient(180deg, #4b3a2d 0%, #30261d 100%);
+    border-color: var(--accent);
+    transform: translateY(-1px);
 }
 
 .lore-modal__content {
@@ -226,7 +237,7 @@ html, body {
 .lore-modal__content article {
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(139, 115, 85, 0.35);
-    border-radius: 14px;
+    border-radius: 4px;
     padding: 16px 18px;
 }
 
